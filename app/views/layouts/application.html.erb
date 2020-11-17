@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> app1 | 企画書投稿してみませんか？</title>
+    <title><%= yield(:title) %> proposta | 企画書投稿してみませんか？</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     
@@ -12,6 +12,8 @@
 
   <body> 
     <%= render 'layouts/header' %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
     <%= render 'layouts/footer' %>
   </body>
