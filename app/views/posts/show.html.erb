@@ -1,12 +1,22 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
 
-  <p>
-    <strong>Title:</strong>
-    <%= @post.title %>
-    <%= @post.content %>
-  </p>
-
-  <%= link_to '編集', edit_post_path(@post) %> |
-  <%= link_to '戻る', posts_path %>
+  <div class="panel panel-info">
+	  
+	  <div class="panel-heading">
+	    <p>
+        <strong><%= @post.title %></strong>
+      </p>
+	  </div>
+	  <div class="panel-body">
+		  <p><%= @post.content %></p>
+	  </div>
+	  <div class="panel-footer">
+	    <p><%= @post.created_at %></p>
+	  </div>
+	  
+	  
+	  <%= link_to '編集', edit_post_path(@post) %> |
+    <%= link_to '戻る', posts_path %>
+  </div>
 </div>

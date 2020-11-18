@@ -1,12 +1,12 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
 
-  <h1>投稿一覧</h1>
+  <h1 class="text-center">投稿一覧</h1>
   
   <% @posts.each do |post| %>
   <div class="well well-lg">
     <tr>
-      <td><%= post.title %></td><br/ >
+      <td><strong><%= post.title %></strong></td><br/ >
       <td><%= link_to '詳細', post %></td>
       <td><%= link_to '編集', edit_post_path(post) %></td>
       <td><%= link_to '削除', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
