@@ -1,11 +1,13 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :ensure_correct_user, {only: [:edit, :update, :destroy]}
+ 
 
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
+    @q = Post.ransack(params[:q])
+    @posts = @q.result(distinct: true)
   end
 
   # GET /posts/1

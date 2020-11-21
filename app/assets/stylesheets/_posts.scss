@@ -14,9 +14,19 @@
     margin-top: 60px;
 }
 
+.post-index a {
+    color: #000000;
+}
+
+.post-index a:hover {
+    text-decoration: none;
+    color: #778899;
+}
+
 /*panel*/
 
 .panel {
     width: 800px;
-    margin-top: 60px;
+    margin: 60px 200px;
 }
+
