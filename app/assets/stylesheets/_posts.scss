@@ -2,8 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+/*index*/
+
+.border-bottom {
+    border-top: 3px solid #d3d3d3;
+    width: 600px;
+    display: inline-block;
+}
+
+.post-index {
+    margin-top: 60px;
+}
+
 /*panel*/
 
-.well {
-   background-color: #f0f8ff;
+.panel {
+    width: 800px;
+    margin-top: 60px;
 }
