@@ -15,6 +15,9 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find_by(id: params[:id])
+    @post = Post.find(params[:id])
+    @comment = Comment.new
+    @comments = @post.comments
   end
 
   # GET /posts/new

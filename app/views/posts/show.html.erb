@@ -1,3 +1,4 @@
+<% provide(:title, @post.title  ) %>
 <div class="container postview">
   <p id="notice"><%= notice %></p>
 	
@@ -16,11 +17,24 @@
     			<%= link_to '削除', @post, method: :delete , data: { confirm: '削除してもよろしいですか？' }, class: 'post-menu' %> 
     		<% end %>
 		</div>
+		
 		<div class="post-comment">
 			<h3>コメント</h3>
-			<div class="border-bottom"></div>
+				<% @comments.each do |comment| %>
+					<div class="border-bottom"></div><br />
+        			<p class=""><%= comment.user.username %></p>
+        			<p class="comment-time"><%= time_ago_in_words(comment.created_at) %>前</p>
+        			<p class="comment"><%= comment.comment %></p>
+    			<% end %>
+      	
+			<h3>コメントを書く</h3>
+			<div class="">
+				<%= form_for [@post, @comment] do |f| %>
+  					<%= f.text_area :comment, class: "comment-form"%><br />
+  					<%= f.submit '送信', class: "btn-sm btn-primary" %>
+				<% end %>
+			</div>
 		</div>
-		
 		<%= link_to 'back', posts_path, class: 'font20' %>
-  </div>    
+  	</div>    
 </div>

@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
   
+  devise_for :users
+  get 'comments/create'
+  get 'comments/destroy'
   root 'static_page#home'
   get 'static_page/about'
-  devise_for :users
-  resources :posts
+  
+  resources :posts, xcept: [:index] do
+    resources :comments, only: [:create, :destroy]
+  end
+  
+  
   
 end
