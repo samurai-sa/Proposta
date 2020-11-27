@@ -8,18 +8,17 @@ class CommentsController < ApplicationController
     if @comment.save
       redirect_to request.referer
     else
-      #@post_new = Book.new
       @comments = @post.comments
       redirect_to posts_path
     end
   end
 
-  def destroy
-    @post = Post.find(params[:post_id])
-    @comment = Comment.find(params[:id])
-    @comment.destroy
-    redirect_to request.referer
-  end
+  #def destroy
+    #@post = Post.find(params[:post_id])
+    #@comment = Comment.find(params[:id])
+    #@comment.destroy
+    #redirect_to request.referer
+  #end
   
   private
 

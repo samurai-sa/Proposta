@@ -17,7 +17,7 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post = Post.find(params[:id])
     @comment = Comment.new
-    @comments = @post.comments
+    @comments = @post.comments.order(created_at: :desc)
   end
 
   # GET /posts/new
