@@ -9,7 +9,7 @@
 		</div>
 		<div class="post-body">
 			<p><%= @post.content %></p>
-			<p><i class="fas fa-pen"></i> <%= @post.user.username %></p>
+			<p><i class="fas fa-user"></i> <%= @post.user.username %></p>
 		</div>
 		<div class="post-footing font15">
 			<%if  @post.user_id == current_user.id %>
@@ -23,10 +23,9 @@
 			<% if  @post.comments.present? %>
 				<% @comments.each do |comment| %>
 					<div class="border-bottom"></div><br />
-        			<p class=""><%= comment.user.username %></p>
-        			<p class="comment-time"><%= time_ago_in_words(comment.created_at) %>前</p>
-        			<p class="comment"><%= comment.comment %></p>
-    			<% end %>
+        	<p><i class="fas fa-user"></i> <%= comment.user.username %> <%= time_ago_in_words(comment.created_at) %>前</p>
+        	<p class="comment"><%= comment.comment %></p>
+    		<% end %>
 			<% else %>
 				<div class="border-bottom" ></div><br />
 				<p style="margin: 50px 0;" >コメントはありません</p>

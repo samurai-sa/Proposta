@@ -11,6 +11,11 @@
     </div>
     
     <div class="field form-item">
+      <%= f.label :ユーザータイプ %><br />
+      <%= f.select :usertype, [["法人", "company"], ["一般", "General"]], autofocus: true %>
+    </div>
+    
+    <div class="field form-item">
       <%= f.label :email %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
     </div>
