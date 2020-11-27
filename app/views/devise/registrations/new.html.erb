@@ -13,7 +13,7 @@
     
     <div class="field form-item">
       <%= f.label :ユーザータイプ %><br />
-      <%= f.text_field :usertype %>
+      <%= f.select :usertype, [["法人", "company"], ["一般", "General"]], include_blank: "選択して下さい" %>
     </div>
     
     <div class="field form-item">
