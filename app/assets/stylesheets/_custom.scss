@@ -6,7 +6,11 @@
 .navbar-brand {
     font-size: 25px;
 }
-
+.alert {
+    padding: 5px; 
+    margin-bottom: 5px; 
+    border-radius: 4px;
+}
 /*selectbox*/
 .button, select {
     width: 100%;

@@ -11,17 +11,16 @@
     </div>
   <% end %>
   
-  <div class="field">
-    <%= form.label :タイトル %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :本文 %>
-    <%= form.rich_text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="container">
+    <div class="field">
+      <%= form.text_field :title, placeholder: 'タイトル' %>
+    </div>
+    <div class="field">
+      <%= form.rich_text_area :content, placeholder: '本文' %>
+    </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+    <%= link_to '戻る', posts_path %>
   </div>
 <% end %>
