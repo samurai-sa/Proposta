@@ -7,17 +7,17 @@
     background-color: #e6e6fa;
 }
 .alert {
-    padding: 5px; 
-    margin-bottom: 5px; 
-    border-radius: 4px;
+    padding: 1px; 
+    margin-bottom: 1px; 
+    
 }
+
 /*selectbox*/
 .button, select {
     width: 100%;
     text-transform: none;
     height: 50px;
 }
-
 
 /*login*/
 .form-wrapper {
@@ -26,21 +26,17 @@
    padding: 0 1em 40px 1em;
    max-width: 370px;
  }
-
  .form-wrapper h2 {
    text-align: center;
    padding: 1em 0;
  }
-
  .form {
    padding: 0 1.5em;
  }
-
  .form-item {
    margin-bottom: 0.75em;
    width: 100%;
  }
-
  .form-item input {
    background: #fafafa;
    border: none;
@@ -52,17 +48,14 @@
    transition: border-color 0.3s;
    width: 100%;
  }
-
  .f input:focus {
    border-bottom: 2px solid #c0c0c0;
    outline: none;
  }
-
  .button-panel {
    margin: 2em 0 0;
    width: 100%;
  }
-
  .button-panel .button {
    background: #6495ed;
    border: none;
@@ -76,12 +69,18 @@
    text-transform: uppercase;
    transition: background 0.3s ease-in-out;
    width: 100%;
+   border-radius: 3px;
  }
-
  .button:hover {
    background: #4682b4;
  }
- 
+.form-item input:focus {
+    outline: none;
+    border: 3px solid #67c5ff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
  /*useredit*/
  .user-delete {
     margin-top: 80px;
@@ -98,7 +97,6 @@
   transition: .4s;
   margin-top: 30px;
 }
-
 .btn-gradient-radius:hover {
   background-image: linear-gradient(45deg, #4682b4 0%, #6495ed 100%);
   text-decoration: none;
