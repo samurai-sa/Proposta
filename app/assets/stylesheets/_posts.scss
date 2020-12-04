@@ -18,7 +18,7 @@ input#post_title {
   -webkit-appearance: none;
 }
 input#post_title:focus {
-  border: 1px solid #67c5ff;
+  border: 2px solid #67c5ff;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -40,7 +40,7 @@ trix-editor#post_content {
 }
 
 trix-editor#post_content:focus {
-  border: 1px solid #67c5ff;
+  border: 2px solid #67c5ff;
 }
 /*posts/index*/
 
@@ -67,6 +67,7 @@ trix-editor#post_content:focus {
   background-color: #f0f8ff;
   width: 100%;
   height: 100%;
+  margin-top: -25px;
 }
 .post-body {
   background-color: #fffafa;
@@ -74,6 +75,9 @@ trix-editor#post_content:focus {
   margin: 20px 80px;
   padding: 30px 40px;
   font-size: 15px;
+}
+.post-title {
+  margin-top: 40px;
 }
 .post-title strong {
  font-size: 20px;
