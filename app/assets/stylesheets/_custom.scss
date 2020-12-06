@@ -106,6 +106,13 @@
 }
 
 /*searchbox*/
+.btn-default {
+   transition: 0.3s;
+}
+.btn-default:hover {
+    border-color: #67c5ff;
+    background-color: #e0ffff;
+}
 
 /*footer*/
 
