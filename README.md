@@ -1,25 +1,38 @@
-# README
+# proposta
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+企画書、アイデアを投稿・公開し関係企業、同じ志を持ったビジネスパートナーとの新規プロジェクトを開始するサイトです。
 
 ![top](https://user-images.githubusercontent.com/69831034/101302715-b7c3da00-387f-11eb-9bc9-06e4b17aaddb.png)
 
+# Description
 
-* Ruby version
+会社で通らなかった企画書、やってみたいビジネスアイデアを投稿します。
+企業、個人問わず気になるプロジェクトにはコメントをします。
+コメント機能から新しいプロジェクトに繋がります。
 
-* System dependencies
+# Usage
 
-* Configuration
+1. 新規登録よりユーザー登録を行ってください。
+2. 新規投稿よりプロジェクトの投稿を行います。投稿された投稿は「投稿一覧」に追加されます。
+3. 投稿詳細のコメント欄より投稿に対してメッセージを送信できます。
 
-* Database creation
+# URL
 
-* Database initialization
+https://mighty-refuge-73643.herokuapp.com/
 
-* How to run the test suite
+# Dependency
 
-* Services (job queues, cache servers, search engines, etc.)
+* Ruby 2.6.3
+* Rails 6.0.3.4
+* AWS
+* SQLite3
+* PostgreSQL
+* heroku
 
-* Deployment instructions
+# 機能一覧
 
-* ...
+* ユーザー新規登録、ユーザー編集、ログイン機能
+* プロジェクト新規投稿、投稿編集、投稿削除
+* コメント機能
+* タイトル、投稿内容検索機能
+
