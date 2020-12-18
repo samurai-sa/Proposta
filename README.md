@@ -12,6 +12,8 @@
 
 ![スクリーンショット 2020-12-07 122941](https://user-images.githubusercontent.com/69831034/101306327-f198de80-3887-11eb-96e5-4d35e173f09b.png)  
 ![スクリーンショット 2020-12-07 122756](https://user-images.githubusercontent.com/69831034/101306319-ee055780-3887-11eb-8fe3-63971546523e.png)
+(https://user-images.githubusercontent.com/69831034/102559113-726e9a80-4112-11eb-8b6d-8e3b3db29828.png)
+
 
 # Usage
 
